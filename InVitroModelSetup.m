@@ -42,7 +42,7 @@ for i = 1:size(model.mets,1)
 
     if isempty(findstr('[c]',model.mets{i,1})) == 0     %finds the [c] compartment
         
-        model=add_exchange(model,model.mets{i,1},-1000,1000); %adds the exchange reaction
+        model=add_exchange(model,model.i,-1000,1000); %adds the exchange reaction
         
     end
     
